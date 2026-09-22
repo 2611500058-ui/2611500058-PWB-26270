@@ -3,130 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 01 - Dasar HTML5 | Anggi Kharisma</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-        header h1 {
-            margin-bottom: 5px;
-        }
-        main {
-            max-width: 800px;
-            margin: 30px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        .bio-box {
-            background: #eff6ff;
-            border-left: 4px solid #3b82f6;
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .bio-box p {
-            margin: 5px 0;
-        }
-        ul {
-            padding-left: 25px;
-            margin: 15px 0;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        button {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 14px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        button:hover {
-            background-color: #1d4ed8;
-        }
-        #alertBox {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #047857;
-        }
-        .nav-back {
-            display: inline-block;
-            margin-top: 25px;
-            color: #1e3a8a;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .nav-back:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #64748b;
-            font-size: 0.85rem;
-        }
-    </style>
+    <title>Pemrograman Web Dasar - Anggi Kharisma</title>
 </head>
+
 <body>
 
     <header>
         <h1>Pemrograman Web Dasar</h1>
-        <p>Pertemuan 01 - Pengenalan Web & Dasar HTML5</p>
+        <p>Website Pertemuan 01</p>
     </header>
 
     <main>
-        <h2>Hello World! 👋</h2>
-        <p>Selamat datang di halaman web latihan pertama saya pada mata kuliah Pemrograman Web Dasar di ISB Atma Luhur.</p>
+        <h2>Belajar Pemrograman Web</h2>
 
-        <div class="bio-box">
-            <p><strong>NIM:</strong> 2611500058</p>
-            <p><strong>Nama Mahasiswa:</strong> Anggi Kharisma</p>
-            <p><strong>Kelas / Kelompok:</strong> TI1J</p>
-            <p><strong>Program Studi:</strong> Teknik Informatika</p>
-        </div>
+        <p>
+            Pada pertemuan pertama, saya mempelajari konsep dasar
+            pemrograman web dan teknologi yang digunakan dalam
+            pengembangan website.
+        </p>
 
-        <h3>Materi yang Dipelajari pada Pertemuan 01:</h3>
+        <h3>Materi yang Dipelajari</h3>
+
         <ul>
-            <li>Konsep Dasar Pemrograman Web dan Standar W3C</li>
-            <li>Arsitektur Klien-Peladen (Client-Server Architecture)</li>
-            <li>HTTP Request dan HTTP Response</li>
-            <li>Teknologi Web: HTML, CSS, JavaScript, PHP, dan MySQL</li>
-            <li>Hubungan Antarteknologi dalam Aplikasi Web</li>
-            <li>Version Control menggunakan Git & Publikasi GitHub Pages</li>
+            <li>Konsep Dasar Pemrograman Web</li>
+            <li>Arsitektur Klien-Peladen</li>
+            <li>HTTP Request dan Response</li>
+            <li>HTML, CSS, JavaScript, PHP, dan MySQL</li>
+            <li>Hubungan Antarteknologi</li>
         </ul>
 
-        <div style="margin: 25px 0;">
-            <button onclick="sapaPengunjung()">Uji Coba JavaScript</button>
-            <p id="alertBox"></p>
-        </div>
+        <button onclick="tampilkanPesan()">
+            Klik Saya
+        </button>
 
-        <a href="../index.html" class="nav-back">&larr; Kembali ke Beranda Utama</a>
+        <p id="pesan"></p>
     </main>
 
     <footer>
-        <p>&copy; 2026 Anggi Kharisma (2611500058) - Pemrograman Web Dasar</p>
+        <p>&copy; 2026 Pemrograman Web Dasar - Anggi Kharisma (2611500058)</p>
     </footer>
 
     <script>
-        function sapaPengunjung() {
-            document.getElementById("alertBox").textContent = 
-                "Halo! JavaScript berhasil dieksekusi dengan baik di browser Anda 🎉";
+        function tampilkanPesan() {
+            document.getElementById("pesan").textContent =
+                "Halo! JavaScript berhasil dijalankan.";
         }
     </script>
 

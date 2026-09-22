@@ -3,370 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemrograman Web Dasar - Anggi Kharisma (2611500058)</title>
-    <style>
-        :root {
-            --primary: #1e3a8a;
-            --primary-light: #3b82f6;
-            --secondary: #0f172a;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --border: #e2e8f0;
-            --accent: #0ea5e9;
-            --success: #10b981;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
-
-        .header-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-isbal {
-            max-height: 70px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 6px 14px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        header h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        header p.subtitle {
-            font-size: 1.1rem;
-            color: #cbd5e1;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-
-        .profile-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 24px 30px;
-            margin-bottom: 35px;
-            border: 1px solid var(--border);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-        }
-
-        .profile-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .profile-item span.label {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: var(--text-muted);
-            letter-spacing: 0.5px;
-        }
-
-        .profile-item span.value {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--text-main);
-        }
-
-        .section-title {
-            font-size: 1.4rem;
-            color: var(--secondary);
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 2px;
-            background: var(--border);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            margin-bottom: 50px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 10px;
-            border: 1px solid var(--border);
-            padding: 20px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-            border-color: var(--primary-light);
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-        }
-
-        .badge {
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 20px;
-            background: #e2e8f0;
-            color: #475569;
-        }
-
-        .badge.active {
-            background: #dcfce7;
-            color: #166534;
-        }
-
-        .card h3 {
-            font-size: 1.15rem;
-            color: var(--secondary);
-            margin-bottom: 8px;
-        }
-
-        .card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 18px;
-            flex-grow: 1;
-        }
-
-        .card a.btn {
-            display: inline-block;
-            text-align: center;
-            padding: 9px 16px;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-
-        .card a.btn:hover {
-            background: var(--primary-light);
-        }
-
-        .card a.btn.disabled {
-            background: #cbd5e1;
-            color: #64748b;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
-
-        footer {
-            background: #0f172a;
-            color: #94a3b8;
-            text-align: center;
-            padding: 25px;
-            font-size: 0.9rem;
-            border-top: 1px solid #1e293b;
-        }
-
-        footer strong {
-            color: #f1f5f9;
-        }
-    </style>
+    <title>Pemrograman Web Dasar - Anggi Kharisma</title>
 </head>
+
 <body>
 
     <header>
-        <div class="header-container">
-            <img src="logoisbal.png" alt="Logo ISB Atma Luhur" class="logo-isbal">
-            <h1>Pemrograman Web Dasar</h1>
-            <p class="subtitle">Repository Portofolio Latihan & Tugas Pertemuan 01 - 16</p>
-        </div>
+        <h1>Pemrograman Web Dasar</h1>
+        <p>Website Pertemuan 01</p>
     </header>
 
-    <div class="container">
-        <!-- Profil Mahasiswa -->
-        <div class="profile-card">
-            <div class="profile-item">
-                <span class="label">Nama Mahasiswa</span>
-                <span class="value">Anggi Kharisma</span>
-            </div>
-            <div class="profile-item">
-                <span class="label">NIM</span>
-                <span class="value">2611500058</span>
-            </div>
-            <div class="profile-item">
-                <span class="label">Kelas / Kelompok</span>
-                <span class="value">TI1J - Teknik Informatika</span>
-            </div>
-            <div class="profile-item">
-                <span class="label">Tahun Ajaran / Semester</span>
-                <span class="value">2026/2027 Gasal</span>
-            </div>
-            <div class="profile-item">
-                <span class="label">Tempat, Tanggal Lahir</span>
-                <span class="value">Pangkalpinang, 23 Feb 2006</span>
-            </div>
-            <div class="profile-item">
-                <span class="label">Hobi</span>
-                <span class="value">Mencoba hal baru</span>
-            </div>
-        </div>
+    <main>
+        <h2>Belajar Pemrograman Web</h2>
 
-        <h2 class="section-title">Daftar Pertemuan Perkuliahan</h2>
+        <p>
+            Pada pertemuan pertama, saya mempelajari konsep dasar
+            pemrograman web dan teknologi yang digunakan dalam
+            pengembangan website.
+        </p>
 
-        <div class="grid">
-            <!-- Pertemuan 01 -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge active">Tersedia</span>
-                        <small style="color: #64748b;">P-01</small>
-                    </div>
-                    <h3>Pertemuan 01: Dasar HTML5</h3>
-                    <p>Konsep dasar web, arsitektur client-server, HTTP request-response, dan pengenalan Git/GitHub.</p>
-                </div>
-                <a href="pertemuan-01/index.html" class="btn">Buka Halaman &rarr;</a>
-            </div>
+        <h3>Materi yang Dipelajari</h3>
 
-            <!-- Pertemuan 02 -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge active">Tersedia</span>
-                        <small style="color: #64748b;">P-02</small>
-                    </div>
-                    <h3>Pertemuan 02: HTML Semantik</h3>
-                    <p>Penyusunan halaman semantik W3C (header, nav, main, article, footer) dan struktur biodata.</p>
-                </div>
-                <a href="pertemuan-02/index.html" class="btn">Buka Halaman &rarr;</a>
-            </div>
+        <ul>
+            <li>Konsep Dasar Pemrograman Web</li>
+            <li>Arsitektur Klien-Peladen</li>
+            <li>HTTP Request dan Response</li>
+            <li>HTML, CSS, JavaScript, PHP, dan MySQL</li>
+            <li>Hubungan Antarteknologi</li>
+        </ul>
 
-            <!-- Pertemuan 03 -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge active">Tersedia</span>
-                        <small style="color: #64748b;">P-03</small>
-                    </div>
-                    <h3>Pertemuan 03: Form & CSS Dasar</h3>
-                    <p>Tugas styling section#contact dengan CSS dasar, layout dua kolom dan form interaktif.</p>
-                </div>
-                <a href="pertemuan-03/index.html" class="btn">Buka Halaman &rarr;</a>
-            </div>
+        <button onclick="tampilkanPesan()">
+            Klik Saya
+        </button>
 
-            <!-- Pertemuan 04 -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge">Akan Datang</span>
-                        <small style="color: #64748b;">P-04</small>
-                    </div>
-                    <h3>Pertemuan 04: CSS Layout</h3>
-                    <p>Konsep external CSS, box-sizing, cascade specificity, dan responsive layouting.</p>
-                </div>
-                <a href="pertemuan-04/index.html" class="btn disabled">Belum Tersedia</a>
-            </div>
-
-            <!-- Pertemuan 05 -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge">Akan Datang</span>
-                        <small style="color: #64748b;">P-05</small>
-                    </div>
-                    <h3>Pertemuan 05: JavaScript Dasar</h3>
-                    <p>Manipulasi DOM, client-side event listener, dan tombol interaktif hamburger menu.</p>
-                </div>
-                <a href="pertemuan-05/index.html" class="btn disabled">Belum Tersedia</a>
-            </div>
-
-            <!-- Pertemuan 06 -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge">Akan Datang</span>
-                        <small style="color: #64748b;">P-06</small>
-                    </div>
-                    <h3>Pertemuan 06: PHP Dasar</h3>
-                    <p>Variabel PHP biodata diri dan kalkulasi otomatis Nilai Akhir, Grade, Bobot & IPK.</p>
-                </div>
-                <a href="pertemuan-06/index.html" class="btn disabled">Belum Tersedia</a>
-            </div>
-
-            <!-- Pertemuan 07 s/d 16 Ringkas -->
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge">Akan Datang</span>
-                        <small style="color: #64748b;">P-07 s/d P-10</small>
-                    </div>
-                    <h3>PHP Array & MySQL</h3>
-                    <p>Array asosiatif, form handling POST, reusable functions, koneksi database dan query SELECT.</p>
-                </div>
-                <a href="#" class="btn disabled">Semester Berjalan</a>
-            </div>
-
-            <div class="card">
-                <div>
-                    <div class="card-header">
-                        <span class="badge">Akan Datang</span>
-                        <small style="color: #64748b;">P-11 s/d P-16</small>
-                    </div>
-                    <h3>CRUD & Proyek Web</h3>
-                    <p>Operasi Create, Update, Delete, Prepared Statements, Session/Security, hingga Evaluasi Akhir.</p>
-                </div>
-                <a href="#" class="btn disabled">Semester Berjalan</a>
-            </div>
-        </div>
-    </div>
+        <p id="pesan"></p>
+    </main>
 
     <footer>
-        <p>&copy; 2026 <strong>Anggi Kharisma (2611500058)</strong> - ISB Atma Luhur Pangkalpinang</p>
-        <p style="margin-top: 6px; font-size: 0.8rem;">Mata Kuliah Pemrograman Web Dasar | Dosen Pengampu: Yohanes Setiawan Japriadi, M.Kom.</p>
+        <p>&copy; 2026 Pemrograman Web Dasar - Anggi Kharisma (2611500058)</p>
     </footer>
+
+    <script>
+        function tampilkanPesan() {
+            document.getElementById("pesan").textContent =
+                "Halo! JavaScript berhasil dijalankan.";
+        }
+    </script>
 
 </body>
 </html>
