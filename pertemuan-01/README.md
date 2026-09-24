@@ -14,31 +14,26 @@ Tahun Ajaran: **2026/2027 Gasal**
 Pada pertemuan pertama, materi yang dipelajari dan dipraktikkan meliputi:
 
 1. **Konsep Dasar Pemrograman Web:**
-   * Memahami cara kerja web internet, peramban (browser), dan server.
-   * Standar web W3C dan pemisahan struktur (HTML), tampilan (CSS), serta perilaku/interaksi (JavaScript).
+   * proses membuat dan mengembangkan sebuah website
 
-2. **Arsitektur Klien-Peladen (Client-Server Architecture):**
-   * Peran browser sebagai client yang meminta (*request*) halaman web.
-   * Peran web server (seperti Apache/Nginx) yang melayani dan mengirimkan balasan (*response*).
+2. **Arsitektur Klien-Peladen :**
+   * klien perangkat yang digunakan untuk meminta dan mengakses website misalnya hp atau laptop.sedangkan peladen adalah tempat penerimaan data tersebut.
 
 3. **HTTP Request dan HTTP Response:**
-   * Siklus permintaan HTTP (GET, POST) dari browser ke web server.
-   * Format header, status code (200 OK, 404 Not Found, dll), dan payload response.
+   * HTTP request adalah permintaan dari pengguna dan broswer ke server
+   * HTTP Response adalah balasan dari server setelah menerima permintaan tersebut.
 
 4. **Ekosistem Teknologi Web:**
-   * **HTML:** Bahasa markup untuk menyusun kerangka dan konten web.
-   * **CSS:** Bahasa styling untuk mengatur desain visual, warna, dan tata letak.
-   * **JavaScript:** Bahasa pemrograman client-side untuk interaktivitas dinamis pada browser.
-   * **PHP:** Bahasa pemrograman server-side untuk memproses logika bisnis dan data dinamis.
-   * **MySQL:** Sistem basis data relasional untuk menyimpan data aplikasi secara persisten.
+   * **HTML:** untuk membuat struktur halaman website
+   * **CSS:** digunakan untuk mengatur halaman supaya lebih rapi
+   * **JavaScript:** untuk membuat website menjadi lebih interaktif 
+   * **PHP:** untuk mengelola data dibagian server
+   * **MySQL:** untuk menyimpan dan juga mengelola data
 
 5. **Hubungan Antarteknologi:**
-   * Alur data dari form HTML dikirim ke PHP di server, disimpan ke MySQL, dan hasilnya dikembalikan ke browser dalam bentuk HTML/CSS/JS.
+   * teknologi yang saling berhubungan dalam pembuatan website.misalnya HTML,CSS,JavaScript,PHP dan MySQL
 
-6. **Version Control dengan Git & GitHub:**
-   * Inisialisasi git repository lokal.
-   * Perintah dasar git (`git add`, `git commit`, `git push`).
-   * Menghubungkan ke remote repository GitHub dan aktivasi publikasi via GitHub Pages.
+
 
 ---
 *File implementasi latihan dapat diakses pada [`index.html`](./index.html)*
