@@ -11,3 +11,7 @@ Tahun Ajaran: **2026/2027 Gasal**
 ---
 
 
+Nama: [Anggi Kharisma] <br>
+NIM: [2611500058} <br>
+Kelompok: [TI1J] <br>
+Tahun Ajaran: 2026/2027 Gasal <br>
