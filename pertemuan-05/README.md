@@ -13,4 +13,4 @@ Perbarui bagian ini setelah melakukan pengujian atau debugging yang relevan.
 Riwayat Pengembangan
 Catat perkembangan melalui commit Git yang bermakna.
 [Pesan commit]: ["Hubungkan JavaScript eksternal ke HTML"]
-[Pesan commit]: [Ringkasan perubahan dan hasil pengujiannya.]
+[Pesan commit]: [Ringkasan perubahan dan hasil pengujiannya]
