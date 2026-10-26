@@ -12,7 +12,8 @@
 <p>Konten HTML statis.</p>
 <?php
 echo "<p>Konten yang dihasilkan oleh PHP.</p>";
-?>
+ <?
+
     <header>
         <h1>Profil Mahasiswa</h1>
 
