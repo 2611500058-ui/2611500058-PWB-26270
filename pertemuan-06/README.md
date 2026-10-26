@@ -43,3 +43,6 @@ Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif.
 
 ### HASILTES G1 :
 -Menampilkan 5 target belajar dengan for ($i = 1; $i <= 5; $i++), dan switch di dalamnya untuk menentukan teks tiap target. Hasil: daftar menampilkan 5 butir, dari "Target belajar ke-1: Memahami sintaks dasar PHP." sampai "Target belajar ke-5: Belum dipetakan".
+
+### HASIL TES G2 :
+-menampilkan urutan semester dari 1-8 menggunakan perulangan while
