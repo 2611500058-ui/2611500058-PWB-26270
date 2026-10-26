@@ -41,4 +41,5 @@ Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif.
 ### HASIL TES F3 :
 -Menentukan $fokusProgramStudi dari $programStudi. Hasil: TI tampil "Komputasi dan pengembangan perangkat lunak", SI tampil "Sistem informasi dan proses bisnis", MI tampil "Belum ditentukan". Nilai dikembalikan ke awal.
 
-### 
+### HASILTES G1 :
+-Menampilkan 5 target belajar dengan for ($i = 1; $i <= 5; $i++), dan switch di dalamnya untuk menentukan teks tiap target. Hasil: daftar menampilkan 5 butir, dari "Target belajar ke-1: Memahami sintaks dasar PHP." sampai "Target belajar ke-5: Belum dipetakan".
