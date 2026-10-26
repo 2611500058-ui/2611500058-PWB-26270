@@ -32,4 +32,7 @@
 -Memeriksa apakah semester berada direntang 1 sampai batas 8
 -berhasil diiuji dan keluar kalimat (pemeriksaan rentang semester:perlu diperiksa lagi)
 
+### HASIL TES F1 :
+-Menentukan kategori semester berdasarkan nilai semester
+
 
