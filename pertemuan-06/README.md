@@ -22,4 +22,7 @@
 ### HASIL TES D2:
 -menambahkan konstanta setelah deklarasi variabel diblok PHP halaman tetap tampil normal
 
+### HASIL TES D4:
+-Menampilkan data dari PHP ke HTML 
+
 
