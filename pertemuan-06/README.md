@@ -47,5 +47,9 @@ Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif.
 ### HASIL TES G2 :
 -menampilkan urutan semester dari 1-8 menggunakan perulangan while
 
-### HASIL TES H1 H2 :
+### HASIL TES H1 :
 -Menampilkan IPK dengan 2 angka desimal
+
+### HASIL TES H2 :
+-Memakai operator identik === untuk memeriksa $catatanTambahan. Hasil: dengan nilai null tampil "Catatan tambahan: Belum ada". Saat nilainya diubah ke "Catatan praktik PHP" tampil "Catatan tambahan: Catatan praktik PHP". Nilai dikembalikan ke null.
+
