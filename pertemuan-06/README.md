@@ -56,3 +56,5 @@ Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif.
 ### HASIL TES H3 :
 -Footer memakai date("Y") untuk tahun otomatis. Hasil: footer tampil "© 2026 ANGGI KHARISMA [2611500058]
 
+###
+
