@@ -38,4 +38,7 @@
 ### HASIL TES F2 :
 Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif. Hasil: tampil "Program Studi: Teknik Informatika (TI)" dan "Status mahasiswa: Aktif". Saat $statusAktif = false tampil "Tidak aktif". Nilai dikembalikan ke awal .
 
-###
+### HASIL TES F3 :
+-Menentukan $fokusProgramStudi dari $programStudi. Hasil: TI tampil "Komputasi dan pengembangan perangkat lunak", SI tampil "Sistem informasi dan proses bisnis", MI tampil "Belum ditentukan". Nilai dikembalikan ke awal.
+
+### 

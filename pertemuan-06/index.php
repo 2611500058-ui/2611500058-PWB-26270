@@ -26,11 +26,18 @@ $keteranganSemester = "Semester akhir";
 }
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik
 Informatika" : "Lainnya");
+// Bagian 4: Percabangan switch-case-default
+switch ($programStudi) {
+case "SI":
+    $fokusProgramStudi = "Sistem informasi dan proses bisnis";
+break;
+case "TI":
+$fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak";
+break;
+default:
+$fokusProgramStudi = "Belum ditentukan";
+}
 ?>
-<!DOCTYPE html>
-<html lang="id">
-
-<head>
     <meta charset="UTF-8" 
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Mahasiswa</title>
