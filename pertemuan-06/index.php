@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="style.css" />
 
 <body>
+
     <?php
 // Komentar satu baris.
 print "Keluaran menggunakan print.";
@@ -16,6 +17,9 @@ print "Keluaran menggunakan print.";
 Komentar beberapa baris.
 Komentar ini tidak ditampilkan pada halaman.
 */
+<?php
+// Pengujian awal eksekusi PHP.
+echo "PHP berhasil dijalankan.";
 ?>
     <header>
         <h1>Profil Mahasiswa</h1>
