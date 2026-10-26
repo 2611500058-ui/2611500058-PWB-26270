@@ -24,6 +24,8 @@ $keteranganSemester = "Semester menengah";
 } else {
 $keteranganSemester = "Semester akhir";
 }
+$namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik
+Informatika" : "Lainnya");
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -68,6 +70,9 @@ $keteranganSemester = "Semester akhir";
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+                <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+                <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+
                 <p>Saya mahasiswa Program Studi Teknik Informatika</p>
 
                 <h3>Target Belajar</h3>

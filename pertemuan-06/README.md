@@ -35,4 +35,7 @@
 ### HASIL TES F1 :
 -Menentukan kategori semester berdasarkan nilai semester
 
+### HASIL TES F2 :
+Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif. Hasil: tampil "Program Studi: Teknik Informatika (TI)" dan "Status mahasiswa: Aktif". Saat $statusAktif = false tampil "Tidak aktif". Nilai dikembalikan ke awal .
 
+###
