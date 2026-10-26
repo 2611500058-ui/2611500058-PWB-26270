@@ -46,3 +46,6 @@ Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif.
 
 ### HASIL TES G2 :
 -menampilkan urutan semester dari 1-8 menggunakan perulangan while
+
+### HASIL TES H1 H2 :
+-Menampilkan IPK dengan 2 angka desimal

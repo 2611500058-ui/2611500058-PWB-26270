@@ -79,6 +79,7 @@ $fokusProgramStudi = "Belum ditentukan";
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
 
                 <p>Saya mahasiswa Program Studi Teknik Informatika</p>
 
