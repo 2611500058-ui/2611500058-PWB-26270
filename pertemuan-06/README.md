@@ -25,4 +25,7 @@
 ### HASIL TES D4:
 -Menampilkan data dari PHP ke HTML 
 
+### HASIL TES E1:
+-menghitung sisa semester menggunakan operator pengurangan
+
 
