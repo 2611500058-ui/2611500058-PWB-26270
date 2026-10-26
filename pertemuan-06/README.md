@@ -18,3 +18,8 @@
 ### HASIL TES D1:
 -menambahkan variabel diatas <DOCTYPEhtml>
 -halaman profil mahasiswa tetap tampil,tidak ada galat PHP
+
+### HASIL TES D2:
+-menambahkan konstanta setelah deklarasi variabel diblok PHP halaman tetap tampil normal
+
+
