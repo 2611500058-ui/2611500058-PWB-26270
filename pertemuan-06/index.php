@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css" />
 
 <body>
-    <?php
+<?php
 // Pengujian awal eksekusi PHP.
 echo "PHP berhasil dijalankan.";
 ?>
