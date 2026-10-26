@@ -14,3 +14,7 @@
 ### HASIL TES C4:
 -berhasil mencoba perbedaan keluaran HTML dan PHP
 -Ctrl+U cek view kode <? PHP tidak keliatan,hanya menjadi <p> biasa.
+
+### HASIL TES D1:
+-menambahkan variabel diatas <DOCTYPEhtml>
+-halaman profil mahasiswa tetap tampil,tidak ada galat PHP
