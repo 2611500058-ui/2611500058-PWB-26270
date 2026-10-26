@@ -53,3 +53,6 @@ Menentukan $namaProdi dari $programStudi dan status mahasiswa dari $statusAktif.
 ### HASIL TES H2 :
 -Memakai operator identik === untuk memeriksa $catatanTambahan. Hasil: dengan nilai null tampil "Catatan tambahan: Belum ada". Saat nilainya diubah ke "Catatan praktik PHP" tampil "Catatan tambahan: Catatan praktik PHP". Nilai dikembalikan ke null.
 
+### HASIL TES H3 :
+-Footer memakai date("Y") untuk tahun otomatis. Hasil: footer tampil "© 2026 ANGGI KHARISMA [2611500058]
+
