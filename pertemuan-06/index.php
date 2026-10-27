@@ -10,7 +10,7 @@ $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "26110058";
+const PROFIL_GITHUB = "2611500058-ui";
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
@@ -36,30 +36,36 @@ $fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak";
 break;
 default:
 $fokusProgramStudi = "Belum ditentukan";
-}
-?>
+}?>
+<!doctype html>
+<html lang="id">
+
+<head>
     <meta charset="UTF-8" 
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<link rel="stylesheet" href="style.css" />
 
 <body>
     <header>
+    <div class="header-top">
         <h1>Profil Mahasiswa</h1>
 
         <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka navigasi" aria-controls="navMenu"
             aria-expanded="false">
             &#9776;
         </button>
+</div>
+
         <nav>
-                 <ul id="navMenu"></ul>
+                 <ul id="navMenu">
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
-    </header>
+</header>
 
     <main>
         <section id="home">
@@ -86,10 +92,7 @@ $fokusProgramStudi = "Belum ditentukan";
                 <p>Saya mahasiswa Program Studi Teknik Informatika</p>
 
                 <h3>Target Belajar</h3>
-                <ol>
-                    <h3>Target Belajar (Perulangan for)</h3>
-<ol>
-<?php
+                <?php
 // Perulangan for tanpa array; materi larik dibahas pada P9.
 for ($i = 1; $i <= 5; $i++) {
 echo "<li>Target belajar ke-" . $i . ": ";
@@ -122,7 +125,6 @@ echo "<li>Semester " . $nomorSemester . "</li>";
 $nomorSemester++; // operator penugasan
 }
 ?>
-</ol>
                     <li>Memahami struktur HTML5.</li>
                     <li>Menyusun halaman web semantik.</li>
                     <li>Memvalidasi dokumen HTML.</li>
@@ -136,26 +138,29 @@ $nomorSemester++; // operator penugasan
 Kunjungi
 <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
 </p>
-            <form id="contactForm" action="index.html" method="get"></form>
-            <form action="index.html" method="get">
+            <form id="contactForm" action="index.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br>
                     <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"
                         minlength="3" maxlength="50" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email</label><br>
+                    <label for="email">Email</label><br />
                     <input class="input-form" type="email" id="email" name="email" placeholder="nama@email.com"
                         required>
                 </div>
+
                 <div class="form-group">
                     <label for="semester">Semester</label><br>
                     <input class="input-form" type="number" id="semester" name="semester" min="1" max="14" required>
                 </div>
+
                 <div class="form-group">
                     <label for="tanggal">Tanggal Kunjungan</label><br>
                     <input class="input-form" type="date" id="tanggal" name="tanggal" required>
                 </div>
+
                 <div class="form-group">
                     <p>Jenis Pesan</p>
                     <input type="radio" id="pertanyaan" name="jenis_pesan" value="pertanyaan" required>
@@ -163,6 +168,7 @@ Kunjungi
                     <input type="radio" id="saran" name="jenis_pesan" value="saran">
                     <label for="saran">Saran</label>
                 </div>
+
                 <div class="form-group">
                     <p>Topik yang Diminati</p>
                     <input type="checkbox" id="minat-html" name="minat" value="HTML">
@@ -170,6 +176,7 @@ Kunjungi
                     <input type="checkbox" id="minat-css" name="minat" value="CSS">
                     <label for="minat-css">CSS</label>
                 </div>
+
                 <div class="form-group">
                     <label for="prodi">Program Studi</label><br>
                     <select class="input-form" id="prodi" name="prodi" required>
@@ -178,18 +185,18 @@ Kunjungi
                         <option value="TI">Teknik Informatika</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="pesan">Pesan</label><br>
                     <textarea class="input-form" id="pesan" name="pesan" maxlength="300" placeholder="Tulis pesan Anda"
                         required></textarea>
+ </div>
 
-                </div>
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
                 <p id="formFeedback"></p>
             </form>
         </section>
-    </main>
 
     <footer>
         <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p>

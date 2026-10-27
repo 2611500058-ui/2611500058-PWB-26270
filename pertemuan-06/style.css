@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-  background-color: #003366;
+  background-color: #014283;
   color: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
@@ -30,9 +30,29 @@ nav ul {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 8px;
-  margin: 0;
+  margin:0;
   padding: 0;
   list-style: none;
+}
+
+#navMenu {
+    display: none;
+}
+
+#navMenu.nav-open {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.nav-toggle {
+    display: block;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
 nav a {
@@ -157,14 +177,13 @@ section {
   resize: vertical;
 }
 
-#contact button {
-  cursor: pointer;
+#contact button { 
   background-color: #003366;
   color: #ffffff;
   font-weight: bold;
   padding: 8px 14px;
   margin: 8px 6px 0 0;
-  border: 1px solid #003366;
+  border: 1px solid #003366;  
 }
 
 /* Footer */
@@ -181,7 +200,16 @@ footer p {
   margin: 0;
 }
 
+.form-feedback-error {
+    color: #c62828;
+}
+
+.form-feedback-success {
+    color: #2e7d32;
+}
+
 @media (min-width: 768px) {
+
   /* aturan CSS untuk viewport dengan lebar minimal 768px */
   main {
     grid-template-columns: 1fr 1fr;
