@@ -75,6 +75,13 @@ switch ($programStudi) {
 	default:
 		$fokusProgramStudi = "Belum ditentukan";
 }
+// Ambil data sekali tampil (flash), lalu hapus dari session
+$pj_errors = $_SESSION['pj_errors'] ?? [];
+$pj_old    = $_SESSION['pj_old'] ?? [];
+$pj_sukses = $_SESSION['pj_sukses'] ?? false;
+$pj_list   = $_SESSION['pj_list'] ?? [];
+unset($_SESSION['pj_errors'], $_SESSION['pj_old'], $_SESSION['pj_sukses']);
+?>
 ?>
 <!doctype html>
 <html lang="id">
@@ -174,6 +181,62 @@ switch ($programStudi) {
 				</ol>
 			</article>
 		</section>
+
+<section id="peminjaman">
+  <h2>Permohonan Peminjaman Fasilitas Kampus</h2>
+    
+<?php if ($pj_sukses): ?>
+    <p style="color:green"><strong>Permohonan berhasil dikirim.</strong></p>
+<?php endif; ?>
+<?php if ($pj_errors): ?>
+    <ul style="color:#b91c1c">
+        <?php foreach ($pj_errors as $e): ?>
+            <li><?= htmlspecialchars($e) ?></li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+<p id="pjPesan" style="color:#b91c1c"></p>
+
+    <form id="peminjamanForm" action="index.php#peminjaman" method="post" novalidate>
+        <input type="hidden" name="form_type" value="peminjaman">
+
+        <div class="form-group">
+            <label for="pj_nama">Nama Penanggung Jawab</label><br />
+            <input class="input-form" type="text" id="pj_nama" name="pj_nama"
+                placeholder="Masukkan nama penanggung jawab" minlength="3" maxlength="50" required />
+        </div>
+
+        <div class="form-group">
+            <label for="pj_fasilitas">Jenis Fasilitas</label><br />
+            <select class="input-form" id="pj_fasilitas" name="pj_fasilitas" required>
+                <option value="">-- Pilih fasilitas --</option>
+                <option value="Ruang Kelas">Ruang Kelas</option>
+                <option value="Aula">Aula</option>
+                <option value="Laboratorium Komputer">Laboratorium Komputer</option>
+                <option value="Proyektor">Proyektor</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pj_tanggal">Tanggal Peminjaman</label><br />
+            <input class="input-form" type="date" id="pj_tanggal" name="pj_tanggal" required />
+        </div>
+
+        <div class="form-group">
+            <label for="pj_durasi">Durasi Peminjaman (jam)</label><br />
+            <input class="input-form" type="number" id="pj_durasi" name="pj_durasi"
+                placeholder="Contoh: 2" min="1" max="8" required />
+        </div>
+
+        <div class="form-group">
+            <label for="pj_keperluan">Keperluan Peminjaman</label><br />
+            <textarea class="input-form" id="pj_keperluan" name="pj_keperluan" rows="4"
+                placeholder="Jelaskan keperluan peminjaman" minlength="10" maxlength="200" required></textarea>
+        </div>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+    </form>
 
 		<section id="contact">
 			<h2>Kontak</h2>
