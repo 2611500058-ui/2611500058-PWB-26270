@@ -35,11 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 // Mengamankan data sebelum ditampilkan kembali ke halaman HTML.
 // P6: PHP dasar dan pemrograman sisi peladen
 // Bagian 1: Variabel dan konstanta
-$nim = "0344300002";
-$namaMahasiswa = "Cantika Putih";
-$programStudi = "SI";
+$nim = "2611500058";
+$namaMahasiswa = "Anggi kharisma";
+$programStudi = "TI";
 $tahunAkademik = "2026/2027";
-$semester = 4;
+$semester = 1;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
@@ -107,6 +107,7 @@ switch ($programStudi) {
 				<li><a href="#home">Beranda</a></li>
 				<li><a href="#about">Tentang</a></li>
 				<li><a href="#contact">Kontak</a></li>
+				<li><a href="#peminjaman">Peminjaman Fasilitas</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -116,7 +117,7 @@ switch ($programStudi) {
 			<h2>Selamat Datang</h2>
 			<p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
 
-			<img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" />
+			<img src="img/foto-profil.jpg.jpeg" alt="Foto profil Nama Mahasiswa" />
 		</section>
 
 		<section id="about">
