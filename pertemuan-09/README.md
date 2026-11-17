@@ -1,0 +1,1 @@
+- menyali artefak pertemuan 8 ke pertemuan 9
